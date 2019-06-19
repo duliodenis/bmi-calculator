@@ -1,7 +1,7 @@
 # BMI Calculator
 An iOS and Android multi-screen, custom themed, Body Mass Index Calculator App written in Flutter 1.5 / Dart 2.3.
 
-![](art/screenshot/bmi-calc-01.png?raw=true) 
+![](art/screenshot/bmi-calc-02.png?raw=true) 
 
 ### Licensing
 BMI Calculator is licensed under [the MIT License](LICENSE).
