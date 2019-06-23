@@ -14,8 +14,8 @@ class _InputPageState extends State<InputPage> {
   Color maleCardColor = reusableCardInActiveColor;
   Color femaleCardColor = reusableCardInActiveColor;
 
-  void updateColor(int gender) {
-    if (gender == male) {
+  void updateColor(Gender selectedGender) {
+    if (selectedGender == Gender.male) {
       if (maleCardColor == reusableCardInActiveColor) {
         maleCardColor = reusableCardActiveColor;
         femaleCardColor = reusableCardInActiveColor;
@@ -50,7 +50,7 @@ class _InputPageState extends State<InputPage> {
                     onTap: () {
                       print('MALE BUTTON TAPPED');
                       setState(() {
-                        updateColor(male);
+                        updateColor(Gender.male);
                       });
                     },
                     child: ReusableCard(
@@ -67,7 +67,7 @@ class _InputPageState extends State<InputPage> {
                     onTap: () {
                       print('FEMALE BUTTON TAPPED');
                       setState(() {
-                        updateColor(female);
+                        updateColor(Gender.female);
                       });
                     },
                     child: ReusableCard(

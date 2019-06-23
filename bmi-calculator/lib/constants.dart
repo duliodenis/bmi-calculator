@@ -13,5 +13,7 @@ const reusableCardTextColor = Color(0xFF8D8E98);
 const reusableIconSize = 80.0;
 const reusableIconTextSize = 18.0;
 
-const male = 1;
-const female = 2;
+enum Gender {
+  male,
+  female,
+}
