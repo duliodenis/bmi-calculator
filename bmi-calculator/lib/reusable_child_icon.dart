@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
 
-const labelTextStyle = TextStyle(
-  fontSize: reusableIconTextSize,
-  color: reusableCardTextColor,
-);
-
 class ReusableChildIcon extends StatelessWidget {
   final IconData icon;
   final String label;
@@ -19,14 +14,14 @@ class ReusableChildIcon extends StatelessWidget {
       children: <Widget>[
         Icon(
           icon,
-          size: reusableIconSize,
+          size: kReusableIconSize,
         ),
         SizedBox(
           height: 15.0,
         ),
         Text(
           label,
-          style: labelTextStyle,
+          style: kLabelTextStyle,
         ),
       ],
     );

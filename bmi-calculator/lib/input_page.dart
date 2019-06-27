@@ -20,6 +20,7 @@ class _InputPageState extends State<InputPage> {
         title: Text('BMI CALCULATOR'),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Expanded(
             child: Row(
@@ -32,8 +33,8 @@ class _InputPageState extends State<InputPage> {
                       });
                     },
                     color: selectedGender == Gender.male
-                        ? reusableCardActiveColor
-                        : reusableCardInActiveColor,
+                        ? kReusableCardActiveColor
+                        : kReusableCardInActiveColor,
                     cardChild: ReusableChildIcon(
                       icon: FontAwesomeIcons.mars,
                       label: 'MALE',
@@ -48,8 +49,8 @@ class _InputPageState extends State<InputPage> {
                       });
                     },
                     color: selectedGender == Gender.female
-                        ? reusableCardActiveColor
-                        : reusableCardInActiveColor,
+                        ? kReusableCardActiveColor
+                        : kReusableCardInActiveColor,
                     cardChild: ReusableChildIcon(
                       icon: FontAwesomeIcons.venus,
                       label: 'FEMALE',
@@ -60,24 +61,50 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           Expanded(
-            child: ReusableCard(color: reusableCardActiveColor),
+            child: ReusableCard(
+              color: kReusableCardActiveColor,
+              cardChild: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    'HEIGHT',
+                    style: kLabelTextStyle,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.baseline,
+                    textBaseline: TextBaseline.alphabetic,
+                    children: <Widget>[
+                      Text(
+                        '180',
+                        style: kLabelNumberStyle,
+                      ),
+                      Text(
+                        'cm',
+                        style: kLabelTextStyle,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ),
           Expanded(
               child: Row(
             children: <Widget>[
               Expanded(
-                child: ReusableCard(color: reusableCardActiveColor),
+                child: ReusableCard(color: kReusableCardActiveColor),
               ),
               Expanded(
-                child: ReusableCard(color: reusableCardActiveColor),
+                child: ReusableCard(color: kReusableCardActiveColor),
               ),
             ],
           )),
           Container(
-            color: bottomContainerColor,
-            margin: EdgeInsets.only(top: bottomContainerTopInset),
+            color: kBottomContainerColor,
+            margin: EdgeInsets.only(top: kBottomContainerTopInset),
             width: double.infinity,
-            height: bottomContainerHeight,
+            height: kBottomContainerHeight,
           ),
         ],
       ),
