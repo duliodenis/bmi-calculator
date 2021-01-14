@@ -61,13 +61,37 @@
 			children = (
 				63263AD225AD30ED00B12C86 /* AppDelegate.swift */,
 				63263AD425AD30ED00B12C86 /* SceneDelegate.swift */,
-				63263AD625AD30ED00B12C86 /* ViewController.swift */,
-				63263AD825AD30ED00B12C86 /* Main.storyboard */,
+				63263AED25AFC4A000B12C86 /* View */,
+				63263AEB25AFC49300B12C86 /* Controllers */,
 				63263ADB25AD30ED00B12C86 /* Assets.xcassets */,
 				63263ADD25AD30ED00B12C86 /* LaunchScreen.storyboard */,
 				63263AE025AD30ED00B12C86 /* Info.plist */,
 			);
 			path = "bmi-calculator";
+			sourceTree = "<group>";
+		};
+		63263AEB25AFC49300B12C86 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63263AD625AD30ED00B12C86 /* ViewController.swift */,
+				63263AEE25AFC4BA00B12C86 /* Model */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		63263AED25AFC4A000B12C86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63263AD825AD30ED00B12C86 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63263AEE25AFC4BA00B12C86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
