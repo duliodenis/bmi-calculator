@@ -16,6 +16,7 @@
 		63263AE925AD313900B12C86 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 63263AE825AD313900B12C86 /* README.md */; };
 		63C2E2A026710F180015110A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2E29F26710F180015110A /* SecondViewController.swift */; };
 		63C2E2A226714E5F0015110A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2E2A126714E5F0015110A /* ResultViewController.swift */; };
+		63C2E2A426715B8B0015110A /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2E2A326715B8B0015110A /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		63263AE825AD313900B12C86 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		63C2E29F26710F180015110A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		63C2E2A126714E5F0015110A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		63C2E2A326715B8B0015110A /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		63263AD125AD30ED00B12C86 /* bmi-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				63263AEE25AFC4BA00B12C86 /* Model */,
 				63263AD225AD30ED00B12C86 /* AppDelegate.swift */,
 				63263AD425AD30ED00B12C86 /* SceneDelegate.swift */,
 				63263AED25AFC4A000B12C86 /* View */,
@@ -78,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				63263AD625AD30ED00B12C86 /* CalculateViewController.swift */,
-				63263AEE25AFC4BA00B12C86 /* Model */,
 				63C2E29F26710F180015110A /* SecondViewController.swift */,
 				63C2E2A126714E5F0015110A /* ResultViewController.swift */,
 			);
@@ -96,6 +98,7 @@
 		63263AEE25AFC4BA00B12C86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63C2E2A326715B8B0015110A /* CalculatorBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C2E2A426715B8B0015110A /* CalculatorBrain.swift in Sources */,
 				63C2E2A226714E5F0015110A /* ResultViewController.swift in Sources */,
 				63C2E2A026710F180015110A /* SecondViewController.swift in Sources */,
 				63263AD725AD30ED00B12C86 /* CalculateViewController.swift in Sources */,
