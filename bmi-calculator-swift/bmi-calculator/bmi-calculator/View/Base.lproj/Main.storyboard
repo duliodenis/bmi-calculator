@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calculate View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bmi_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CalculateViewController" customModule="bmi_calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,18 +111,19 @@
                         <outlet property="heightSlider" destination="vi1-7D-Ely" id="8BJ-Qc-CHO"/>
                         <outlet property="weightLabel" destination="cVH-Yj-ei9" id="tGt-o6-Inx"/>
                         <outlet property="weightSlider" destination="SQY-cz-5vJ" id="BeT-bA-W6D"/>
+                        <segue destination="x1H-J7-TNc" kind="presentation" identifier="goToResult" id="uyr-CH-kVF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="113.04347826086958" y="88.392857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="GZQ-Fp-WdW">
             <objects>
-                <viewController id="x1H-J7-TNc" sceneMemberID="viewController">
+                <viewController id="x1H-J7-TNc" customClass="ResultViewController" customModule="bmi_calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2zE-VM-gVx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="result_background" translatesAutoresizingMaskIntoConstraints="NO" id="odU-ho-6LA">
@@ -159,11 +160,18 @@
                                 <state key="normal" title="RECALCULATE">
                                     <color key="titleColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="recalculate:" destination="x1H-J7-TNc" eventType="touchUpInside" id="PUr-W6-xbs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F40-J1-sG5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="f9c-4E-Tn3" id="hx5-o3-bMa"/>
+                        <outlet property="bmiLabel" destination="BEp-Jr-VVY" id="8qL-Qc-mqd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHL-eB-yGp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
