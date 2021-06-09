@@ -17,6 +17,7 @@
 		63C2E2A026710F180015110A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2E29F26710F180015110A /* SecondViewController.swift */; };
 		63C2E2A226714E5F0015110A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2E2A126714E5F0015110A /* ResultViewController.swift */; };
 		63C2E2A426715B8B0015110A /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2E2A326715B8B0015110A /* CalculatorBrain.swift */; };
+		63C2E2A626716FF60015110A /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2E2A526716FF60015110A /* BMI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		63C2E29F26710F180015110A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		63C2E2A126714E5F0015110A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		63C2E2A326715B8B0015110A /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		63C2E2A526716FF60015110A /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				63C2E2A326715B8B0015110A /* CalculatorBrain.swift */,
+				63C2E2A526716FF60015110A /* BMI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				63C2E2A426715B8B0015110A /* CalculatorBrain.swift in Sources */,
 				63C2E2A226714E5F0015110A /* ResultViewController.swift in Sources */,
 				63C2E2A026710F180015110A /* SecondViewController.swift in Sources */,
+				63C2E2A626716FF60015110A /* BMI.swift in Sources */,
 				63263AD725AD30ED00B12C86 /* CalculateViewController.swift in Sources */,
 				63263AD325AD30ED00B12C86 /* AppDelegate.swift in Sources */,
 				63263AD525AD30ED00B12C86 /* SceneDelegate.swift in Sources */,
